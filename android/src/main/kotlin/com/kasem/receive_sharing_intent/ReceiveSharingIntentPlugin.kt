@@ -233,7 +233,7 @@ class ReceiveSharingIntentPlugin : FlutterPlugin, ActivityAware, MethodCallHandl
     }
 
     override fun onNewIntent(intent: Intent): Boolean {
-        handleIntent(intent, false)
+        handleIntent(intent, true)
         return false
     }
 }
