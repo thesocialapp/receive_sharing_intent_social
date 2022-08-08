@@ -41,7 +41,7 @@ class ReceiveSharingIntentPlugin : FlutterPlugin, ActivityAware, MethodCallHandl
     private var eventSinkText: EventChannel.EventSink? = null
 
     private var binding: ActivityPluginBinding? = null
-    private lateinit var applicationContext: Context
+    lateinit var applicationContext: Context
 
     private fun setupCallbackChannels(binaryMessenger: BinaryMessenger) {
         val mChannel = MethodChannel(binaryMessenger, MESSAGES_CHANNEL)
